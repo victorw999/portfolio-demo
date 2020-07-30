@@ -1,0 +1,49 @@
+@keyframes fadeIn {
+  0%   { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+section#filter_gallery {
+  .flex {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    &.row{flex-direction: row;}
+  }
+
+  .filter-wrap {
+    position: relative;
+
+    .float-bar {
+      top: 0;
+      bottom: 0;
+      // left: 30px;
+      margin: auto 0;
+      position: absolute;
+      overflow: hidden;
+      border-radius: 1px;
+      background: #e31b6d; /* red */
+      transition: all 0.5s ease-in-out;
+    } // .float-bar
+
+    .filter {
+      @media screen and (min-width: 960px) {
+        font-size: 13pt;
+        padding: 0 40px;
+        margin: 0 25px;
+      }
+      @media screen and (min-width: 600px) {
+        font-size: 11pt;
+        margin: 0 15px;
+        padding: 0 30px;
+      }
+      font-size: 6pt;
+      font-weight: 600;
+      padding: 0 20px;
+      cursor: pointer;
+      transition: background-color 0.5s;
+    } // .filter
+
+  } //mix_controls .filter-wrap
+} //section#filter_gallery

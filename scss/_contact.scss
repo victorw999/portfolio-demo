@@ -1,0 +1,70 @@
+// Styling for the contact section
+section#contact {
+  // background-color: $gray-900;
+  // background-color: #57698f;
+  background-color: $navbar_bg_color;
+
+  background-image: url("../img/map-image.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  .section-heading {
+    color: $white;
+  }
+  .section-subheading.vic_email {
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    font-style: normal;
+    font-family: Montserrat, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  }
+  .form-group {
+    margin-bottom: 25px;
+    input,
+    textarea {
+      padding: 20px;
+    }
+    input.form-control {
+      height: auto;
+    }
+    textarea.form-control {
+      height: 248px;
+    }
+  }
+  .form-control:focus {
+    border-color: $primary;
+    box-shadow: none;
+  }
+  ::-webkit-input-placeholder {
+    font-weight: 700;
+    color: $gray-400;
+    @include heading-font;
+  }
+  :-moz-placeholder {
+    font-weight: 700;
+    color: $gray-400;
+    /* Firefox 18- */
+    @include heading-font;
+  }
+  ::-moz-placeholder {
+    font-weight: 700;
+    color: $gray-400;
+    /* Firefox 19+ */
+    @include heading-font;
+  }
+  :-ms-input-placeholder {
+    font-weight: 700;
+    color: $gray-400;
+    @include heading-font;
+  }
+
+  #sendMessageButton {
+    background-color: $vic_action !important;
+    border-color: $vic_action !important;
+
+    &:active,
+    &:focus,
+    &:hover {
+      background-color: #dfca7f !important;
+      border-color: white !important;
+    }
+  }
+}

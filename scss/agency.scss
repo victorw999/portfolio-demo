@@ -1,0 +1,31 @@
+// Core variables and mixins
+@import "variables.scss";
+@import "mixins.scss";
+@import "media.scss";
+
+// Install bootstrap breakpoints
+// REF: https://eddyerburgh.me/use-bootstrap-4-media-query-mixins
+@import "node_modules/bootstrap/scss/functions";
+@import "node_modules/bootstrap/scss/variables";
+@import "node_modules/bootstrap/scss/mixins/_breakpoints";
+
+// Global CSS
+@import "global.scss";
+// Components
+@import "navbar.scss";
+@import "masthead.scss";
+@import "services.scss";
+@import "portfolio.scss";
+@import "timeline.scss";
+@import "team.scss";
+@import "contact.scss";
+@import "footer.scss";
+
+@import "scrolldemo";
+@import "filter_gallery";
+@import "filter_gallery_menu";
+@import "progressbar";
+@import "emailme";
+@import "about";
+@import "intro-text";
+@import "modal";

@@ -1,0 +1,18 @@
+node_modules
+.sass-cache
+.tmp
+
+# hide google recaptcha's keys
+**/constant.php
+ 
+# diagrams
+**/*.ai
+
+# debug files
+phpinfo.php
+
+# log.txt in all dir
+**/log.txt 
+
+#coding backup files, that has -bk- in its name
+*-bk-*.*
